@@ -1,0 +1,69 @@
+<app-search-bar [(search)]="search"></app-search-bar>
+<app-search-type (typeElectric)="electricClicked($event)" (typeFire)="fireClicked($event)" (typeWater)="waterClicked($event)" (typePlant)="plantClicked($event)"></app-search-type>
+
+@switch (true) {
+  @case (isElectricClicked == 'authorized') {
+    <div id="card-list">
+    @for (monster of filterElectric; track monster) {
+      <app-monster [monster]="monster"/>
+    } @empty {
+      <div class="center">No monster found !</div>
+    }
+    </div>
+    @if (filterElectric.length > 0) {
+      <div class="center">Found {{filterElectric.length}} monster/s !</div>
+    }
+  }
+  @case (isFireClicked == 'authorized') {
+    <div id="card-list">
+    @for (monster of filterFire; track monster) {
+      <app-monster [monster]="monster"/>
+    } @empty {
+      <div class="center">No monster found !</div>
+    }
+    </div>
+    @if (filterFire.length > 0) {
+      <div class="center">Found {{filterFire.length}} monster/s !</div>
+    }
+  }
+  @case (isPlantClicked == 'authorized') {
+    <div id="card-list">
+    @for (monster of filterPlant; track monster) {
+      <app-monster [monster]="monster"/>
+    } @empty {
+      <div class="center">No monster found !</div>
+    }
+    </div>
+    @if (filterPlant.length > 0) {
+      <div class="center">Found {{filterPlant.length}} monster/s !</div>
+    }
+  }
+  @case (isWaterClicked == 'authorized') {
+    <div id="card-list">
+    @for (monster of filterWater; track monster) {
+      <app-monster [monster]="monster"/>
+    } @empty {
+      <div class="center">No monster found !</div>
+    }
+    </div>
+    @if (filterWater.length > 0) {
+      <div class="center">Found {{filterWater.length}} monster/s !</div>
+    }
+  }
+  @default {
+    <div id="card-list">
+    @for (monster of filteredMonster; track monster) {
+      <app-monster [monster]="monster"/>
+    } @empty {
+      <div class="center">No monster found !</div>
+    }
+    </div>
+    @if (filteredMonster.length > 0) {
+      <div class="center">Found {{filteredMonster.length}} monster/s !</div>
+    }
+  }
+
+}
+
+<div class="center"><button (click)="addGenericMonster()">Add Generic Monster</button></div><br/><br/>
+
