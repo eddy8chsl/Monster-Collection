@@ -4,15 +4,15 @@ Lors de ma première semaine de stage à Mazedia, n'ayant aucune expérience ave
 
 **_La collection de Carte_**
 
-![index](src/app/assets/img/index.webp)
+![index](./src/assets/img/index.webp)
 
 **_Filtrage par type_**
 
-![filter by type](src/app/assets/img/filter_by_type.webp)
+![filter by type](./src/assets/img/filter_by_type.webp)
 
 **_Filtrage par nom_**
 
-![filter by search](src/app/assets/img/filter_by_search.webp)
+![filter by search](./src/assets/img/filter_by_search.webp)
 
 ## Serveur de développement
 
