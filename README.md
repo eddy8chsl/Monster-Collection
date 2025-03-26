@@ -1,27 +1,19 @@
 # Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Lors de ma première semaine de stage à Mazedia, n'ayant aucune expérience avec ce framework, mon maître de stage m'a donné une totale autonomie dans l'apprentisage du framework Angular 17. Pour cela, j'ai réalisé un mini-projet de cartes à collectionner de monstres en suivant des tutoriels de la chaîne YouTube [SimpleTeck](https://www.youtube.com/@SimpleTechProd). Voici mon projet : [Monster Collection](https://github.com/eddy8chsl/Monster-Collection.git).
 
-## Development server
+**_La collection de Carte_**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![index](/app/assets/img/index.webp)
 
-## Code scaffolding
+**_Filtrage par type_**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![filter by type](/app/assets/img/filter_by_type.webp)
 
-## Build
+**_Filtrage par nom_**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![filter by search](/app/assets/img/filter_by_search.webp)
 
-## Running unit tests
+## Serveur de développement
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Exécutez _ng serve_ pour un serveur de développement. Naviguez jusqu'à _http://localhost:4200/_. L'application sera automatiquement rechargée si vous modifiez l'un des fichiers sources.
